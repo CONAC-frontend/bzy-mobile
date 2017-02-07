@@ -1,4 +1,19 @@
 	$(function(){
+			/*js隐藏浏览器地址栏*/
+			(
+				function(){
+					if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {  
+	                    bodyTag = document.getElementsByTagName('body')[0];  
+	                    bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';  
+                }  
+	                setTimeout(function() {  
+	                    window.scrollTo(0, 1)  
+	                }, 0);  
+	                console.log(111);
+	               //console.log(window.navigator.standalone);
+	              console.log($("html").css("font-size")); 
+				}
+			)();
 		
 			/*header跟随滚动变色*/
 			(
@@ -91,12 +106,10 @@
 					timer=setInterval(function(){
 						num++;
 						num = num%aLiNum;
-						console.log(num);
 						oUl.css("-webkit-transition","all .5s ease-in-out");
 						oUl.css("transition","all .5s ease-in-out");
 						oUl.css("-webkit-transform","translateY("+aLiHight*-num+"px)");
 						oUl.css("transform","translateY("+aLiHight*-num+"px)");
-						console.log(aLiHight*-num);
 					},3000);
 				}
 			)();
