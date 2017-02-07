@@ -1,0 +1,174 @@
+	<style>
+		.sign_box { width:100%;  background-color: #FFFFFF;transition: all 0.3s; transform: translateX(100%); position: fixed; top: 0rem; left: 0; padding-top: 0.7rem; 
+		
+		}
+		.move{transform: translateX(0);}
+		
+		/*iconfont*/
+		.rep_icon {
+				   width: 0.8rem; height: 0.8rem;
+				   vertical-align: 0.1rem;
+				   fill: currentColor;
+				   overflow: hidden;
+				   color: #FFFFFF;
+			  }
+		
+		.rep_banner_wrap { height: 2rem; width: 6.4rem;}
+			.rep_banner_wrap img { height: 100%; width: 100%;}
+		.rep_cont_header { height: 0.7rem; width: 100%; border-bottom: 1px solid #E0E0E0; /*background: -webkit-linear-gradient(top,#fff,#ddd);*/}
+		.rep_cont_header span { height: 100%; width: 33.3%; line-height: 0.7rem; font-size: 0.25rem; font-weight: 800; color: #666; text-align: center; box-sizing: border-box; transition: all 0.2s;}
+		.rep_cont_header .active { font-size: 0.3rem; color: #ce0c0d; font-weight: 800; border-bottom: 2px solid #ce0c0d;}
+		.rep_cont_wrap { width: 100%; height: 7.948rem; overflow: scroll;/*background: -webkit-linear-gradient(top,#fff,#ddd);*/ }
+			/*.rep_cont { width: 6.4rem; background: #FF0000; }*/
+			.rep_form1 { width: 100%; height: 7.96rem; /*height: 12rem; overflow: auto;*/  background: rgba(217,213,214,0.3); }
+				.rep_form1 p { height: 0.9rem; line-height: 0.9rem; width: 95%; font-size: 0.25rem; color: #000; font-weight: 800; margin: 0 auto; border-bottom: 1px solid #CCCCCC;}
+				.rep_form1 p input { height: 0.6rem; width: 4rem; padding-left: 0.2rem; margin: 0.15rem 0 0 0.1rem;}
+				.rep_form1 p:nth-of-type(1) select { height: 0.6rem; width: 4.25rem; padding-left: 0.2rem; margin: 0.15rem 0 0 0.1rem;}
+				.rep_form1 p:nth-of-type(1) option { color: #000;}
+				.rep_form1 p:nth-of-type(2) { }	
+				.rep_form1 p:nth-of-type(3){}	
+				.rep_form1 p:nth-of-type(3) input { height: 0.6rem; width: 4.22rem;}	
+				.rep_form1 p:nth-of-type(4) span { height: 0.6rem; width: 2.2rem; text-indent: 0.1rem; line-height: 0.6rem; margin: 0.15rem 2.3rem 0 0; background: #CCCCCC; color: #000; font-weight: 100; }	
+				.rep_form1 p:nth-of-type(5) input { width: 3.5rem; }	
+				.rep_form1 p:nth-of-type(6){}	
+				.rep_form1 p:nth-of-type(7){ height: 1.2rem;}	
+					.rep_form1 p:nth-of-type(7) textarea { height: 1rem; width: 4.23rem; margin-top: 0.1rem; margin-left: 0.1rem;}	
+					.rep_form1 p:nth-of-type(8) { height: 1rem; border: none;}
+				.rep_form1 p:nth-of-type(8) button { height: 0.6rem; width: 1.2rem; margin: 0.2rem 0.2rem 0 0;}
+			
+			
+	
+			.rep_rate_wrap { width: 100%; background: rgba(217,213,214,0.3);/* height: 18rem; overflow: auto;*/}
+			.rep_way_wrap { width: 100%; padding-top: 0.4rem; /*background: #FFFFFF;*//* height: 18rem; overflow: auto;*/}
+			/*comment*/
+				.rep_way_box { width: 70%; height: 3rem; margin: 0 auto; /*background: rgba(217,213,214,0.3);*/ border-bottom: 1px solid #FF0000;}	
+					.rep_way_box p { height: 2rem; width: 100%; line-height: 0.5rem; font-size: 0.25rem; font-weight: 800; color: #000000; text-align: center; margin-top: 0.2rem;}
+				.svg { height: 0.8rem; width: 0.8rem; margin: 0.2rem auto;}
+	</style>
+	
+	
+	<section class="sign_box">
+		<section class="rep_banner_wrap">
+			<img src="./img/resourceImg/list14.jpg" />
+		</section>
+		<section class="rep_cont_header">
+				<span class="fl active">举报内容</span>
+				<span class="fl">举报进度</span>
+				<span class="fl">举报方式</span>
+		</section>
+		<section class="rep_cont_wrap">
+			<div id="rep_cont">
+				<div class="swiper-container rep-swiper-container">
+					  <div class="swiper-wrapper">
+						    <div class="swiper-slide">
+						    	<form class="rep_form1">
+						    		<p>举报类型：<select name="" >
+										<option value="党政机关">仿冒党政机关、事业单位网站</option>
+										<option value="党政机关">域名名称</option>
+										<option value="党政机关">网站名称</option>
+									</select></p>
+						    		<p>举报人称呼：<input type="text" placeholder="请填写举报人称呼"/></p>
+						    		<p>移动电话：<input type="text" placeholder="请填写电话号码"/></p>
+						    		<p>获取验证码：<span class="fr">获取短信验证码</span></p>
+						    		<p>所举报网站网址：<input type="text" placeholder="请填写所举报网站网址"/></p>
+						    		<p>网站截图：<input type="file" value="网站截图" /></p>
+						    		<p>具体内容：<textarea></textarea></p>
+						    		<p><button class="fr">提交</button></p>
+						    	</form>
+						    </div>
+						    <div class="swiper-slide">
+						    	<section class="rep_rate_wrap">
+						    		举报进度
+						    	</section>
+						    </div>
+						    <div class="swiper-slide">
+						    	<section class="rep_way_wrap">
+						    		<div class="rep_way_box">
+						    			<div class="svg">
+						    				<svg class="rep_icon" aria-hidden="true">
+											  	<use xlink:href="#icon-dianhua-copy"></use>
+											</svg>
+										</div>	
+						    			<p>电话举报<br/>010-69001234</p>
+						    		</div>
+						    		<div class="rep_way_box">
+						    			<div class="svg">
+						    				<svg class="rep_icon" aria-hidden="true">
+											  	<use xlink:href="#icon-youxiang-copy"></use>
+											</svg>
+										</div>	
+						    			<p>邮箱举报<br/>service@conac.cn</p>
+						    		</div>
+						    		<div class="rep_way_box">
+						    			<div class="svg">
+						    				<svg class="rep_icon" aria-hidden="true">
+											  	<use xlink:href="#icon-weixin-copy-copy"></use>
+											</svg>
+										</div>	
+						    			<p>微信举报<br/>关注公众号</p>
+						    		</div>
+						    		<div class="rep_way_box">
+						    			<div class="svg">
+						    				<svg class="rep_icon" aria-hidden="true">
+											  	<use xlink:href="#icon-weixin-copy-copy"></use>
+											</svg>
+										</div>	
+						    			<p>微信举报<br/>关注公众号</p>
+						    		</div>
+						    	</section>
+						    </div>
+					  </div> 
+				</div>
+			</div>
+		</section>
+	</section>
+	
+	<script>
+		var My = $(".sign_box");
+		 My.ready(function(){
+		 	$('.common_query_title').remove();
+		 	$('.inpt_wrap').remove();
+		 	var clock = setTimeout(function(){
+		 		My.addClass("move");
+		 	},20);
+		 	$('header').css("background","#ffffff");
+		 	/*添加搜索框*/
+		 	var str="<div class='search fr clear' value='/web_report'><svg class='iconSmall fl' aria-hidden='true'><use xlink:href='#icon-sousuo-copy'></use></svg><p class='fl'>请输入想要查询网站名称</p></div>";
+		 	$("header").append(str);
+		 	$("header").css({"border-bottom":"1px solid #CCC","background":"#FFFFFF"});
+		 	/*$("main").css("margin-top","0.7rem");*/
+		 	/*点击搜索增删组件*/
+	   	   $(".search").bind("tap",function(){
+	   	   		var searchFlag = $(".search").attr("value");
+	   	   		if(searchFlag!="/common_query"||searchFlag!="no"){
+		   	   		$("#main").load('template/common_query.html');
+		   	   		$(".search").attr("value",'no');
+	   	   		}
+	   	   });
+	   	   
+	   		/*举报内容滑动效果*/
+			var RepSwiper=new Swiper('.rep-swiper-container',{
+				 	autoHeight:true,
+				   onSlideChangeStart: function (swiper) {
+		                var j=RepSwiper.activeIndex;
+		                $('.rep_cont_header span').removeClass('active').eq(j).addClass('active');
+	               }
+			});
+			/*列表切换*/
+			 $('.rep_cont_header span').each(function(index){
+				$(this). bind('tap', function (e) {
+		            e.preventDefault();
+		            //得到当前索引
+		            //var i=$(this).index();
+		            $('.rep_cont_header span').removeClass('active').eq(index).addClass('active');
+		            RepSwiper.slideTo(index,1000,false);
+	       		});
+			 })
+				 
+				  
+		 	
+		});
+	</script>
+	
+	
+	

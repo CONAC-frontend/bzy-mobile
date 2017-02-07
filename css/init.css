@@ -1,0 +1,38 @@
+/*初始化标签*/
+body,html,div,img,span,h1,h2,h3,h4,h5,i,em,strong,textarea,form,td,tr,ul,li,dl,input,header,p,select,option { margin: 0; padding: 0;}
+html{ overflow-y:scroll;}
+a{ text-decoration: none; }
+a:hover{ text-decoration: underline;}
+img{ border: none; display: block;}
+ul,ol{ list-style: none;}
+em,i{ font-style:normal;}
+table { border-collapse:collapse; border-spacing:0; }
+
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);/*去掉触摸遮盖层*/
+    /*-webkit-user-modify: read-write-plaintext-only;*/
+    -webkit-user-select: none;/*禁止用户选择文字*/
+}
+
+/*设置所有盒子大小计算边框内*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*消除输入框的阴影和边框*/
+input,textarea, select{
+    -webkit-appearance: none; /*去掉webkit默认的表单样式*/
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+/*comment css*/
+body{position: relative;}
+body,html{ height: 100%; width: 100%;}
+.fl{ float: left;}
+.fr{ float: right;} 
+.clear{ zoom: 1;}
+.clear:after{ content: ""; height: 0; display: block; visibility: hidden; clear: both;}

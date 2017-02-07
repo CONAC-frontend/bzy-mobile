@@ -1,0 +1,147 @@
+	<style>
+		.sign_box { width:100%;height: 100%;background-color: #FFFFFF;transition: all 0.3s; transform: translateX(100%); position: fixed; top: 0rem; left: 0; padding-top: 0.7rem; overflow: auto;
+			background: #FFFFFF;
+		}
+		.move{transform: translateX(0);}
+		
+		.img_box { height: 3rem; width: 6.4rem;}
+		.img_box img { height: 100%; width: 100%;}
+		.new_wrap { width: 94%; margin: 0.1rem auto; /*border-top: 1px solid #CCCCCC;*/}
+		.new_wrap ul { width: 100%;}
+		.new_wrap ul li { height: 1,8rem; line-height: 1.8rem; width: 100%; padding: 0.2rem 0; border-bottom: 1px solid #CCCCCC;;}
+		.new_wrap ul li a { display: block;}
+		.list_img { height: 1.4rem; width: 2rem;}
+		.list_img img { height: 100%; width: 100%;}
+		.list_cont { height: 1.4rem; width: 3.8rem;}
+		.p_cont { height: 0.8rem; line-height: 0.4rem; width: 100%; font-size: 0.3rem; color: #000;
+			overflow : hidden;text-overflow: ellipsis; display: -webkit-box; white-space: pre-wrap;-webkit-line-clamp: 2;-webkit-box-orient: vertical; font-weight: 800;
+		}
+		.p_time { height: 0.6rem; line-height: 0.6rem; width: 100%; }
+		.p_time span { font-size: 0.2rem; color: #aaa;}
+		.p_time em { font-size: 0.2rem; color: #aaa;}
+		
+		
+	</style>
+	
+	
+	<section class="sign_box">
+		<section class="img_box">
+			<img src="img/banner6.jpg" alt="图片一" />
+		</section>
+		<section class="new_wrap">
+			<ul>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/banner1.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">党政机关、事业单位网站台账管理系统正式上线!</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/red_sign.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">江苏省盐城市亭湖区编办开展网上名称管理工作“回头看”</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/banner2.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">宁波宁海县编办开展网站标识专项检查 助力杭州G20国际峰会</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/banner3.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">人民日报：党政机关网站将加挂统一标识</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/banner4.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">新京报：8.7万党政网站明年统一标识 每年假冒案千余起</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/banner6.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">央视网：党政机关网站将统一标识规范域名防范假冒网站</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+				<li><a href="javascript:;" class="clear">
+					<div class="list_img fl">
+						<img src="img/banner7.jpg" />
+					</div>
+					<div class="list_cont fr">
+						<p class="p_cont">科技日报：网站标识管理：李逵“李鬼”一眼辨清</p>
+						<p class="p_time clear">
+							<span class="fl">标识管理中心</span>
+							<em class="fr">2016-12-23</em>
+						</p>
+					</div>
+				</a></li>
+			</ul>
+		</section>
+	</section>
+	
+	<script>
+		var My = $(".sign_box");
+		 My.ready(function(){
+		 	$('.common_query_title').remove();
+		 	$('.inpt_wrap').remove();
+		 	var clock = setTimeout(function(){
+		 		My.addClass("move");
+		 	},20);
+		 	$("header").css("background","#ffffff");
+		 	$("header").css({"border-bottom":"1px solid #CCC","background":"#FFFFFF"});
+		 	/*My.bind("scroll",function(){
+		 		console.log(My.scrollTop());
+		 	})*/
+		 	/*添加搜索框*/
+		 	var str="<div class='search fr clear' value='/sign_state'><svg class='iconSmall fl' aria-hidden='true'><use xlink:href='#icon-sousuo-copy'></use></svg><p class='fl'>请输入想要查询网站名称</p></div>";
+		 	var header=$('header');
+		 	header.append(str);
+			/*点击搜索增删组件*/
+	   	   $(".search").bind("tap",function(){
+	   	   		var searchFlag = $(".search").attr("value");
+	   	   		if(searchFlag!="/common_query"||searchFlag!="no"){
+		   	   		$("#main").load('template/common_query.html');
+		   	   		$(".search").attr("value",'no');
+	   	   		}
+	   	   });
+		 });
+	</script>

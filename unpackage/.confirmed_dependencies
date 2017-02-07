@@ -1,0 +1,166 @@
+{
+	"index.html": {
+		"resources": [
+			"img/list_logo/unit2.png",
+			"img/list_logo/unit4.png",
+			"img/banner4.jpg",
+			"resource/iconfont/iconfont.js",
+			"img/banner6.jpg",
+			"img/list_logo/unit1.png",
+			"img/banner3.jpg",
+			"img/list_logo/office3.png",
+			"css/index.css",
+			"resource/swiper/swiper.min.js",
+			"img/list_logo/unit5.png",
+			"img/more_logo.png",
+			"img/list_logo/unit3.png",
+			"img/list_logo/unit6.png",
+			"img/list_logo/office6.png",
+			"img/dot.jpg",
+			"css/init.css",
+			"img/list_logo/office1.png",
+			"img/list_logo/unit7.png",
+			"img/list_logo/office7.png",
+			"img/list_logo/office4.png",
+			"img/banner1.jpg",
+			"img/banner7.jpg",
+			"js/rem.js",
+			"img/banner2.jpg",
+			"img/list_logo/office2.png",
+			"img/red_sign.jpg",
+			"template/index-all-page/sign-page/SignPage2.html",
+			"img/more_logo1.png",
+			"img/list_logo/office5.png",
+			"img/sign.jpg",
+			"js/zepto.min.js",
+			"resource/swiper/swiper.min.css",
+			"img/paper.jpg",
+			"js/index.js",
+			"template/index-all-page/notice-page/NoticePage2.html",
+			"img/resourceImg/list8.jpg",
+			"img/resourceImg/list2.jpg",
+			"img/resourceImg/list10.jpg",
+			"img/resourceImg/list6.jpg",
+			"img/resourceImg/list9.jpg",
+			"img/resourceImg/list1.jpg",
+			"img/resourceImg/list3.jpg",
+			"img/resourceImg/list4.jpg",
+			"img/resourceImg/list7.jpg",
+			"img/banner10.jpg",
+			"template/operational_guidance.html",
+			"img/resourceImg/code.jpg",
+			"template/common_query.html",
+			"img/nav_bg1.png",
+			"template/sign_state.html",
+			"img/resourceImg/list14.jpg",
+			"template/web_report.html",
+			"template/index-all-page/notice-page/NoticePage3.html",
+			"template/index-all-page/sign-page/SignPage1.html",
+			"template/index-all-page/operational-page/OperationalPage1.html",
+			"template/subpage/subpage2.html",
+			"img/banner5.jpg",
+			"template/policy_paper.html",
+			"img/resourceImg/list5.jpg",
+			"template/subpage/subpage1.html",
+			"index.html"
+		],
+		"refer": [
+			"template/index-all-page/sign-page/SignPage2.html",
+			"template/index-all-page/notice-page/NoticePage2.html",
+			"template/index-all-page/notice-page/NoticePage3.html",
+			"template/index-all-page/sign-page/SignPage1.html",
+			"template/index-all-page/operational-page/OperationalPage1.html",
+			"template/subpage/subpage2.html",
+			"template/subpage/subpage1.html",
+			"index.html"
+		]
+	},
+	"template/index-all-page/sign-page/SignPage2.html": {
+		"resources": [
+			"template/index-all-page/sign-page/sign-css/SignPage1.css",
+			"js/zepto.min.js",
+			"resource/iconfont/iconfont.js",
+			"js/rem.js",
+			"img/resourceImg/list5.jpg",
+			"template/index-all-page/sign-page/sign-css/SignCommon.css",
+			"css/init.css"
+		]
+	},
+	"template/index-all-page/notice-page/NoticePage2.html": {
+		"resources": [
+			"template/index-all-page/notice-page/notice-css/NoticePage2.css",
+			"js/zepto.min.js",
+			"img/resourceImg/list1.jpg",
+			"resource/iconfont/iconfont.js",
+			"js/rem.js",
+			"template/index-all-page/notice-page/notice-css/NoticeCommon.css",
+			"css/init.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"template/index-all-page/notice-page/NoticePage3.html": {
+		"resources": [
+			"js/zepto.min.js",
+			"img/resourceImg/list3.jpg",
+			"resource/iconfont/iconfont.js",
+			"template/index-all-page/notice-page/notice-css/NoticePage3.css",
+			"template/index-all-page/notice-page/notice-css/NoticeCommon.css",
+			"js/rem.js",
+			"css/init.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"template/index-all-page/sign-page/SignPage1.html": {
+		"resources": [
+			"template/index-all-page/sign-page/sign-css/SignPage1.css",
+			"js/zepto.min.js",
+			"resource/iconfont/iconfont.js",
+			"img/resourceImg/list4.jpg",
+			"js/rem.js",
+			"template/index-all-page/sign-page/sign-css/SignCommon.css",
+			"css/init.css"
+		]
+	},
+	"template/index-all-page/operational-page/OperationalPage1.html": {
+		"resources": [
+			"template/index-all-page/operational-page/operational-css/OperationalCommon.css",
+			"js/zepto.min.js",
+			"template/index-all-page/operational-page/operational-css/OperationalPage1.css",
+			"resource/iconfont/iconfont.js",
+			"img/resourceImg/list11.jpg",
+			"js/rem.js",
+			"css/init.css"
+		]
+	},
+	"template/subpage/subpage2.html": {
+		"resources": [
+			"css/CommonSubpage.css",
+			"index.html",
+			"js/zepto.min.js",
+			"img/resourceImg/list1.jpg",
+			"resource/iconfont/iconfont.js",
+			"js/rem.js",
+			"css/init.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"template/subpage/subpage1.html": {
+		"resources": [
+			"css/CommonSubpage.css",
+			"index.html",
+			"js/zepto.min.js",
+			"resource/iconfont/iconfont.js"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}
