@@ -9,9 +9,6 @@
 	                setTimeout(function() {  
 	                    window.scrollTo(0, 1)  
 	                }, 0);  
-	                console.log(111);
-	               //console.log(window.navigator.standalone);
-	              console.log($("html").css("font-size")); 
 				}
 			)();
 		
@@ -75,23 +72,6 @@
 					})
 				}
 			)();
-			
-			
-			/*more tab切换*/
-	/*		(
-				function(){
-					var oP=$('.tab_header p');
-					oP.eq(0).addClass("tab_action");
-					$('.tab_con1').css('display','block')
-					oP.each(function(index){
-						$(this).tap(function(){
-							oP.removeClass("tab_action");
-							$(this).addClass("tab_action");
-							$('.tab_body ul').hide().eq(index).show();
-						})
-					})
-				}
-			)();*/
 			
 			
 			/*重要公告滚动播出效果*/
