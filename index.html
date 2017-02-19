@@ -9,12 +9,19 @@
 		<meta name="format-detection" content="telphone=no, email=no" />
 		<!--meta标签让应用全屏模式显示-->
 		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="browsermode" content="application">
 		<!--meta标签让浏览器缓存-->
 		<!--<meta http-equiv="Cache-Control" content="public"/>-->
 		<link rel="stylesheet" href="resource/swiper/swiper.min.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/init.css" />
 		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
 		<style type="text/css">
 			.icon {
 			   width: 0.5rem; height: 0.5rem;
@@ -25,12 +32,25 @@
 			}
 			.iconSmall {
 			   width: 0.35rem; height: 0.35rem;
+			   vertical-align: 0.1rem;
+			   fill: currentColor;
+			   overflow: hidden;
+			   color: #FFFFFF;
 			}
 			.iconMid {
-			   width: 0.55rem; height: 0.55rem;
+			   width: 0.55rem; height: 0.5rem;
+			   font-size: 1rem;
+			   vertical-align: 0.1rem;
+			   fill: currentColor;
+			   overflow: hidden;
+			   color: #FFFFFF;
 			}
 			.iconBig {
 			   width: 0.5rem; height: 1rem;
+			   vertical-align: 0.1rem;
+			   fill: currentColor;
+			   overflow: hidden;
+			   color: #FFFFFF;
 			}
 		</style>
 	</head>
@@ -151,7 +171,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<!--九宫格-->
-							<div style="height: 0.5rem; line-height: 0.5rem; width: 100%; font-size: 0.2rem; color: #000; font-weight: 800; text-align: center;">编办用户操作</div>
+							<div class="listTitle">编办用户操作</div>
 							<div class="list_box">
 							<div class="list_wrap clear">
 								<ul class="office">
@@ -209,7 +229,7 @@
 						</div>
 						<div class="swiper-slide">
 							<!--九宫格-->
-							<div style="height: 0.5rem; line-height: 0.5rem; width: 100%; font-size: 0.2rem; color: #000; font-weight: 800; text-align: center;">单位用户操作</div>
+							<div class="listTitle">单位用户操作</div>
 							<div class="list_box" style="height: 3rem;">
 							<div class="list_wrap clear" style="height: 3rem;">
 								<ul class="unit">
@@ -278,7 +298,7 @@
 						</div>
 						<div class="imp_new_cont fl">
 							<ul>
-								<li><a href="./template/subpage/subpage1.html" target="_self">党政机关、事业单视频视频视频</a></li>
+								<li><a href="./template/subpage/subpage1.html" target="_self">党政机关、事业单位网站挂标流程视频</a></li>
 								<li><a href="./template/subpage/subpage2.html" target="_self">网站台账新功能上线通知</a></li>
 								<li><a href="./template/subpage/subpage2.html" target="_self">网站台账功能上线</a></li>
 							</ul>
@@ -301,7 +321,7 @@
 						<div class="comm_cont">
 							<ul>
 								<li>
-									<a href="./template/index-all-page/sign-page/SignPage1.html" target="_self" class="clear">
+									<a href="./template/subpage/mconac.html" target="_self" class="clear">
 										<img src="img/sign.jpg" alt="标识动态图片一"/>
 										<div class="clear">
 											<p>辨识真假更快捷 标识管理更方便—CONAC开通网站标识管理绿色通道</p>
@@ -373,8 +393,7 @@
 			</section>
 		</main>	
 	</body>
-	<script type="text/javascript" src="js/zepto.min.js" ></script>
 	<script type="text/javascript" src="resource/swiper/swiper.min.js" ></script>
-	<script type="text/javascript" src="js/index.js" ></script>
 	<script type="text/javascript" src="resource/iconfont/iconfont.js" ></script>
+	<script type="text/javascript" src="js/search.js"></script>
 </html>

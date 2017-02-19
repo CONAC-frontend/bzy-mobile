@@ -62,7 +62,9 @@
 			"template/policy_paper.html",
 			"img/resourceImg/list5.jpg",
 			"template/subpage/subpage1.html",
-			"index.html"
+			"index.html",
+			"js/search.js",
+			"template/subpage/mconac.html"
 		],
 		"refer": [
 			"template/index-all-page/sign-page/SignPage2.html",
@@ -72,7 +74,8 @@
 			"template/index-all-page/operational-page/OperationalPage1.html",
 			"template/subpage/subpage2.html",
 			"template/subpage/subpage1.html",
-			"index.html"
+			"index.html",
+			"template/subpage/mconac.html"
 		]
 	},
 	"template/index-all-page/sign-page/SignPage2.html": {
@@ -157,10 +160,20 @@
 			"css/CommonSubpage.css",
 			"index.html",
 			"js/zepto.min.js",
-			"resource/iconfont/iconfont.js"
+			"resource/iconfont/iconfont.js",
+			"js/rem.js",
+			"css/init.css"
 		],
 		"refer": [
 			"index.html"
+		]
+	},
+	"template/subpage/mconac.html": {
+		"resources": [
+			"template/subpage/logo.jpg",
+			"template/subpage/SeoImg.jpg",
+			"template/subpage/mconac.css",
+			"template/subpage/mconac.js"
 		]
 	}
 }

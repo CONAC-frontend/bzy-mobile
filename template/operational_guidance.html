@@ -10,14 +10,14 @@
 			.tab ul li { font-size: 0.22rem; font-weight: 800; color: #000; height: 100%; line-height: 0.8rem; text-align: center; width: 20%; box-sizing: border-box; border-bottom: 1px solid #CCCCCC;}
 			.tab ul .active { font-size: 0.25rem; color: #FF0000; font-weight: 800; border-bottom: 1px solid #FF0000; transition: all 0.2s;}
 		.sec_box { position: absolute; left: 0; top: 4.5rem; overflow: auto; height: 100%; width: 100%;}
-			.sec_wrap { position: absolute; left: 0; top: 0; /*display: none;*/}
+			.sec_wrap { position: absolute; left: 0; top: 0;}
 			.plicy_list_wrap { height: 100%; width: 20%; box-sizing: border-box; border-right: 1px solid #f0f0f0; border-top: 1px solid #f0f0f0;}
 				.plicy_list_wrap ul { width: 100%;}
 				.plicy_list_wrap li { height: 0.85rem; padding-top: 0.15rem; line-height: 0.3rem; width: 100%; background: #FFFFFF; font-size: 0.2rem; color: #666; text-align: center; box-sizing: border-box; border-bottom: 1px solid #f0f0f0;}
 				.plicy_list_wrap .li_active {transform: translateX(1px); color: #FF0000; background: #f4f4f4; font-weight: 800; font-size: 0.22rem;}
 			.plicy_cont_wrap { height: 100%; width: 80%; background: #f4f4f4; padding: 0 0 0 0; position: relative; overflow: auto;}
-				.common_page { /*height: 100%;*/ width: 100%; }
-				.common_page ul{  width: 100%; /*height: 7rem;*/ padding: 0 0.1rem; overflow: auto;}
+				.common_page { width: 100%; }
+				.common_page ul{  width: 100%; padding: 0 0.1rem; overflow: auto;}
 				.common_page li{ width: 100%; background: #FFFFFF; margin-bottom: 0.2rem; margin-top: 0.2rem; padding-bottom: 0.2rem; border-bottom: 1px solid #e5e5e5; }
 				.common_page li:after{ content: ""; height: 0; display: block; visibility: hidden; clear: both;}
 				.common_page li:first-child { margin-top: 0.1rem; }
@@ -31,8 +31,6 @@
 				.common_page li p i{ font-size: 0.2rem; color: #AAAAAA; float: left; }
 				.hide { display: none;}
 				.show { display: block;}
-			
-			
 	</style>
 	
 	
@@ -225,6 +223,7 @@
 		 			My.addClass("move");
 				},20);
 			/*添加搜索框*/
+			$(".search").remove();
 		 	var str="<div class='search fr clear' value='/operational_guidance'><svg class='iconSmall fl' aria-hidden='true'><use xlink:href='#icon-sousuo-copy'></use></svg><p class='fl'>请输入想要查询网站名称</p></div>";
 		 	var header=$('header');
 		 	header.append(str);
@@ -242,20 +241,12 @@
 			
 			/*举报内容滑动效果*/
 			var RepSwiper=new Swiper('.guid-swiper-container',{
-					/*onSlideChangeEnd: function(swiper){
-				      console.log('swiper触发了;');
-				  },*/
-				   /*autoplay:2000,
-				   loop:true,
-				   //设置swiper触碰以后是否重新开始  false重新开始  true停止
-				   autoplayDisableOnInteraction:false,*/
 				   autoHeight:true,
 				   onSlideChangeStart: function (swiper) {
 		                var j=RepSwiper.activeIndex;
 		                aTab.removeClass('active').eq(j).addClass('active');
 						aSec.eq(j).find(".plicy_list_wrap ul li").removeClass().eq(0).addClass("li_active");
-						aSec.eq(j).find(".plicy_cont_wrap .common_page").hide().eq(0).show();	                
-		                //console.log(j);
+						aSec.eq(j).find(".plicy_cont_wrap .common_page").hide().eq(0).show();	 
 	               }
 			});
 	
@@ -265,7 +256,6 @@
 		            e.preventDefault();
 		            //得到当前索引
 		            //var i=$(this).index();
-		            //alert(index);
 		            aTab.removeClass('active').eq(index).addClass('active');
 		            RepSwiper.slideTo(index,1000,false);
 		            aSec.eq(index).find(".plicy_list_wrap ul li").removeClass().eq(0).addClass("li_active");
@@ -280,17 +270,16 @@
 					$(this).addClass("li_active");
 					aPage.hide().eq(index).show();
 				});
+				/*阻止aLi滑动，防止在其身上滑动时出现空白*/
+	       		$(this).on("touchmove",function(e){
+	       			e.preventDefault();
+	       			RepSwiper.detachEvents();/*取消所有监听事件禁止滑动*/
+	       		});
+	       		RepSwiper.attachEvents();
 			});
-			/*	aTab.each(function(ind){
-					$(this).bind("tap",function(){
-						aTab.removeClass("active");
-						$(this).addClass("active");
-						aSec.hide().eq(ind).fadeIn();
-						aSec.eq(ind).find(".plicy_list_wrap ul li").removeClass().eq(0).addClass("li_active");
-						aSec.eq(ind).find(".plicy_cont_wrap .common_page").hide().eq(0).show();
-					});
-				});*/
-			
+			$(".plicy_cont_wrap").on("touchmove",function(){
+				RepSwiper.attachEvents();/*开启所有监听事件开启滑动*/
+			});
 			
 		});
 	</script>

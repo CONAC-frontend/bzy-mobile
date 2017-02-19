@@ -265,7 +265,9 @@
 					"template/policy_paper.html",
 					"img/resourceImg/list5.jpg",
 					"template/subpage/subpage1.html",
-					"index.html"
+					"index.html",
+					"js/search.js",
+					"template/subpage/mconac.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -355,7 +357,19 @@
 					"css/CommonSubpage.css",
 					"index.html",
 					"js/zepto.min.js",
-					"resource/iconfont/iconfont.js"
+					"resource/iconfont/iconfont.js",
+					"js/rem.js",
+					"css/init.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"template/subpage/mconac.html": {
+				"resources": [
+					"template/subpage/logo.jpg",
+					"template/subpage/SeoImg.jpg",
+					"template/subpage/mconac.css",
+					"template/subpage/mconac.js"
 				],
 				"refer": [],
 				"priority": 0

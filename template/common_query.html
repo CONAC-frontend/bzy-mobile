@@ -1,17 +1,16 @@
 	<style>
-		.query_box { width:100%; height: 100%;transition: all 0.3s; transform: translateX(100%); position: fixed; top: 0rem; left: 0; padding-top: 0.7rem; overflow: hidden;
+		.query_box { width:100%; height: 100%; transition: all 0.3s; transform: translateX(100%); position: fixed; top: 0rem; left: 0; padding-top: 0.7rem; overflow: hidden;
 			background: #FFFFFF;
 		}
 		.move{transform: translateX(0);}
 		
-		/*.query_logo { height: 2.5rem; width: 100%; padding-top: 0.7rem; padding-bottom: 0.5rem; background: url(./img/banner6.jpg) no-repeat; background-size: cover; margin-bottom: 0.5rem;}
-		.query_logo div { height: 1.5rem; width: 1rem; background: url(./img/logo.png) no-repeat; background-size: contain; margin: 0 auto;}*/
 		.history { height: 3rem; width: 100%;  }
-		.history h2 { height: 0.5rem; width: 100%; text-indent: 0.2rem; line-height: 0.5rem; font-size: 0.25rem; color: #000000;margin-top: 0.2rem; margin-bottom: 0.1rem; border-bottom: 2px solid #eee;}
-		.history ul { padding-left: 0.2rem; }
-		.history ul li { height: 0.6rem; border-bottom: 1px solid #eee;}
-		/*.history ul li:last-of-type { border-bottom: none;}*/
-		.history ul a { display: block; height: 0.6rem; line-height: 0.6rem; font-size: 0.25rem; color: #888;}
+			.history .hisH { width: 100%; margin-top: 0.2rem; margin-bottom: 0.1rem; border-bottom: 2px solid #eee; }
+			.history  h2 { height: 0.5rem; text-indent: 0.2rem; line-height: 0.5rem; font-size: 0.25rem; color: #000000;}
+			.history  h3 {height: 0.5rem; text-indent: 0.2rem; line-height: 0.5rem; font-size: 0.2rem; color: #000000; margin-right: 0.2rem; }
+			.history ul { padding-left: 0.2rem; padding-right: 0.2rem; height: 2.4rem; overflow-y: scroll; }
+			.history ul li { height: 0.6rem; border-bottom: 1px solid #eee;}
+			.history ul a { display: block; height: 0.6rem; line-height: 0.6rem; font-size: 0.25rem; color: #888;}
 		.find{ height: 1rem; width: 100%; box-sizing: border-box; margin-bottom: 0.2rem;}
 			.find form{  width: 100%; margin-left: 0.5rem; }
 			.inpt_wrap { height: 0.6rem; margin-top: 0.1rem;}
@@ -20,13 +19,12 @@
 			}
 			.inpt_wrap option{height: 0.4rem; width: 2rem; font-size: 0.28rem; color: #121212; text-indent: 0.2rem; line-height: 0.4rem; outline: none; background: rgba(155,155,155,0.2); border: 0;}
 			.inpt_wrap input { height: 0.5rem; width: 3rem; background: rgba(155,155,155,0.1); text-indent: 0.2rem; font-size: 0.22rem; color: #111; line-height: 0.4rem; border: 1px solid #ddd; border-left: none; border-radius: 0 0.1rem 0.1rem 0;}
-			.inpt_wrap span { font-size: 0.28rem; font-weight: 800; margin: 0.1rem 0 0 0.15rem; color: #000;}
-			.btn_wrap { height: 0.6rem; width: 80%; margin: 0.4rem auto; line-height: 0.6rem; overflow: hidden;}
+			.inpt_wrap .searchBt { height: 0.5rem; width: 0.6rem; font-size: 0.28rem; font-weight: 800; margin: 0.1rem 0 0 0.15rem; color: #ce0c0c;}
+			.btn_wrap { height: 0.6rem; width: 80%; margin: 0.4rem auto; line-height: 0.6rem; overflow: hidden; }   
 			.btn_wrap input { height: 0.6rem; width: 1.8rem; text-indent: 0.1rem; margin-left: 0.6rem; font-size: 0.2rem; background: rgba(155,155,155,0.2) ;}
 			.btn_wrap img { height: 0.6rem; width: 1.5rem; }
-			/*.btn_wrap button{ height: 0.5rem; width: 1rem; color: #121212; outline: none; border: 1px solid #999; margin-left: 0.4rem; margin-top: 0.1rem; background: #CCCCCC;}*/
 			
-			.query_content_box { width: 6.2rem; height: 100%; margin: 0 auto; /*background: rgba(155,155,155,0.2);*/ transform: translateY(0.2rem); opacity: 0.4rem; animation: shake 1.5s linear;}
+			.query_content_box { width: 6.2rem; height: 100%; margin: 0 auto; transform: translateY(0.2rem); opacity: 0.4rem; animation: shake 1.5s linear;}
 			@-webkit-keyframes shake{
 				0%{
 					transform: translateY(2rem);
@@ -53,20 +51,18 @@
 					opacity: 1;
 				}
 			}
-			.warn { height: 0.6rem; line-height: 0.6rem; width: 100%; text-indent: 0.5rem; font-size: 0.3rem; color: #000000; font-weight: 800; border-bottom: 1px solid #CCCCCC; margin-bottom: 0.2rem;}
+			.warn { height: 0.6rem; line-height: 0.6rem; width: 100%; text-indent: 0.2rem; font-size: 0.3rem; color: #000000; font-weight: 800; border-bottom: 1px solid #CCCCCC; margin-bottom: 0.2rem;}
 			.warn_word { font-size: 0.2rem; color: #000; line-height: 0.4rem; padding:0 0.1rem 0 0.2rem; }
 	</style>
 	
 	
 	<section class="query_box">
 		<section class="history">
-			<h2>历史记录</h2>
-			<ul>
-				<li><a href="javascript:;">中国科学技术交流中心</a></li>
-				<li><a href="javascript:;">阿拉善右旗委统战部</a></li>
-				<li><a href="javascript:;">清华大学</a></li>
-				<li><a href="javascript:;">北京信息科技大学官网</a></li>
-			</ul>
+			<div class="hisH clear">
+				<h2 class="fl">历史记录</h2>
+				<h3 class="fr">清除历史记录</h3>
+			</div>
+			<ul></ul>
 		</section>
 		<section class="find">
 			<form class="clear">
@@ -97,13 +93,18 @@
 		 	var clock = setTimeout(function(){
 		 		My.addClass("move");
 		 	},20);
-		 	//var str = "<h2 class='common_query_title fl'>公共查询</h2>";
-		 	var str = "<div class='inpt_wrap clear'><select  class='fl'><option value='党政机关'>机构名称</option><option value='党政机关'>域名名称</option><option value='党政机关'>网站名称</option></select><input class='fl' type='text' placeholder='请输入网站名称' /><span class='fl'>搜索</span></div>";
+		 	var str = "<div class='inpt_wrap clear'><select  class='fl'><option value='党政机关'>机构名称</option><option value='党政机关'>域名名称</option><option value='党政机关'>网站名称</option></select><input class='fl userInput' type='text' placeholder='请输入网站名称' /><span class='searchBt fl'>搜索</span></div>";
 		 	$("header").append(str);
-		 	$(".inpt_wrap span").bind("tap",function(){
-		 		alert($(".inpt_wrap input").val());
-		 	})
-		 	//$('header').css("background","#FFFFFF");
 		 	$("header").css({"border-bottom":"1px solid #CCC","background":"#FFFFFF"});
+		 	saveData();  
+            upData();  
+            clearkey();  
+            searchKey();  
+		 	if( $(".history").find("li").length>0 ){
+		 		$(".hisH h3").css("display","block");
+		 	}else{
+		 		$(".hisH h3").css("display","none");
+		 	}
 		 });
 	</script>
+	

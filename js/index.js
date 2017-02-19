@@ -1,24 +1,25 @@
 	$(function(){
-			/*js隐藏浏览器地址栏*/
+			
+			/*“更多”点击增删组件*/
 			(
 				function(){
-					if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {  
-	                    bodyTag = document.getElementsByTagName('body')[0];  
-	                    bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';  
-                }  
-	                setTimeout(function() {  
-	                    window.scrollTo(0, 1)  
-	                }, 0);  
+					$(".imp_new_more").on("tap",function(){/*重要公告更多*/
+						$(".search").remove();
+						$("#main").load('template/policy_paper.html');
+					});
+					$(".comm_more").bind("tap",function(){/*其他三栏目更多*/
+						$(".search").remove();
+						$("#main").load('template/policy_paper.html');
+					})
 				}
 			)();
-		
+			
 			/*header跟随滚动变色*/
 			(
 				function(){
 					var scrollMaster = $("#main");
 					$(scrollMaster).bind("scroll",function () {
 			   			var scrolllenth=scrollMaster.scrollTop()/100;
-			   			//console.log(scrolllenth);
 			  			$("header").css("background",'rgba(255,255,255,'+scrolllenth+')');
 			  			if(scrolllenth>1.7){
 			  				$('header').css("border-bottom","1px solid #ccc");
@@ -48,9 +49,7 @@
 			/*九宫格手指滑动效果*/
 			(
 				function(){
-				   var swiper=new Swiper('.list-container',{
-				   	   
-			 	   });
+				   var swiper=new Swiper('.list-container',{});
 				}
 			)();
 		
@@ -59,6 +58,14 @@
 				function(){
 					var timer=null;
 					$(".header_more").tap(function(){
+						if($(".search").attr("value")=="/index.html"){/*在首页时才阻止滚动*/
+							/*遮罩层下面页面阻止滚动*/
+							$("#main").css({
+								"position":"fixed",
+								"top":"0",
+								"left":"0"
+							});
+						}
 						$(".more_box").css("left","0");
 						timer=setTimeout(function(){
 							$('.shade').css('display',"block");
@@ -66,7 +73,8 @@
 							//alert("列表")
 						},250);
 						$('.shade').tap(function(){					
-							$(".more_box").css("left",'-5rem');
+							$("#main").css("position","");/*开启滚动*/
+							$(".more_box").css("left",'-6rem');
 							$('.shade').css('display',"none");
 						})
 					})
@@ -110,6 +118,7 @@
 				   var _item=$(".more_list_box ul li");
 			   	    for(var i=0;i<_item.length;i++){
 			   	    	_item[i].addEventListener("tap",function(){
+			   	    		$("#main").css("position","");/*开启滚动*/
 			   	    		var _href=this.getAttribute("href");
 			   	    		for(var key in _router_map){
 			   	    			if(_href==key){
@@ -137,8 +146,6 @@
 			   	   });
 				}
 			)();
-			
-			
-			
+				
 			
 		})
