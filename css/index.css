@@ -7,7 +7,7 @@
 			.more_logo div { height: 1.2rem; width: 1rem;}
 			.more_logo img { height: 100%; width: 100%;}
 			.more_img p { text-align: center; height: 0.8rem; line-height: 0.8rem; height: 1rem; font-size: 0.4rem; color: #ce0c0d; font-weight: 800;}
-			.shade { width: 21.875%; height: 100%;display: none; position: fixed; right: 0; top: 0; background: darkgray; z-index: 900;}
+			.shade { width: 21.875%; height: 100%;display: none; position: fixed; right: 0; top: 0; background: #ebebeb; z-index: 900;}
 						
 			/*header search*/
 			.search { height: 0.5rem; width: 71%; padding: 0.1rem 0.4rem 0 0.2rem; margin-top: 0.1rem; margin-right: 7%; background: rgba(155,155,155,0.2); border: 1px solid rgba(175,175,175,0.3); border-radius: 6px;}
