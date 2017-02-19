@@ -42,7 +42,7 @@
 			.listTitle { height: 0.5rem; line-height: 0.5rem; width: 100%; font-size: 0.24rem; color: #000; font-weight: 800; text-align: center;}
 			.list_wrap { height: 2.8rem; width: 100%; background: #FFFFFF; overflow: hidden; }
 			.list_wrap ul { height: 2.8rem; width: 95%; margin: 0 auto; display: -webkit-box; display: flex; display: -webkit-flex; flex-wrap: wrap; }
-			.list_wrap li { width: 1rem; height: 1.2rem; margin: 0.1rem 0.2rem 0rem 0.25rem; /*float: left;*/ -webkit-box-flex:1; flex-grow: 1;}
+			.list_wrap li { width: 1rem; height: 1.2rem; margin: 0.1rem 0.2rem 0rem 0.25rem; float: left; -webkit-box-flex:1; flex-grow: 1;}
 			.list_wrap li a {font-size: 0.07rem; color: #121212; display: block; }
 			.list_wrap li a:active span{ text-decoration: underline; color: #FF0000;}
 			.list_wrap li span { height: 0.2rem; width: 1rem; display: block; font-size: 0.24rem; font-weight: 800; line-height: 0.3rem; text-align: center; color: #184f78; margin: 0.06rem auto;}
