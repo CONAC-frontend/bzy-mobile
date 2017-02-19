@@ -34,7 +34,7 @@
 		
 		/*nav*/
 		#index_nav { height: 0.7rem; width: 100%; overflow: hidden; background: #FFFFFF;}
-			#index_nav p{ height: 0.7rem; width: 100%; line-height: 0.7rem; text-align: center; font-size: 0.24rem; color: #FFFFFF; font-weight: 800;  background: #ce0c0c;  } 
+			#index_nav p{ height: 100%; width: 100%; line-height: 0.7rem; text-align: center; font-size: 0.23rem; color: #FFFFFF; font-weight: 800;  background: #ce0c0c;  } 
 			#index_nav p span{ font-size: 0.36rem; font-style: italic; margin: 0 0.05rem 0 0.05rem;}
 			
 		/*九宫格区*/
@@ -49,7 +49,7 @@
 			.list_wrap li img { height: 0.8rem; width: 0.8rem; margin: 0 auto;}
 				.unit li { margin-bottom: 0.25rem;}
 				.unit li span{ color: #184f78;}
-			
+	
 
 		/*重要公告*/
 		#notice { width: 100%; height: 0.5rem; margin: 0rem 0 0.2rem 0;}
