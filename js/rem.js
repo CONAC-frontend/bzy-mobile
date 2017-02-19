@@ -16,6 +16,8 @@ var hWidth = html.getBoundingClientRect().width;
 html.style.fontSize = hWidth/6.4 + "px";
 });
 
+document.documentElement.style.height = window.innerHeight + 'px';
+
 /*横屏处理*/
 (function rotate(){
    var orientation=window.orientation;

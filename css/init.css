@@ -31,7 +31,7 @@ input,textarea, select{
 }
 
 /*comment css*/
-body{position: relative; }
+body{position: relative; font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
 body,html{ height: 100%; width: 100%;}
 .fl{ float: left;}
 .fr{ float: right;} 
