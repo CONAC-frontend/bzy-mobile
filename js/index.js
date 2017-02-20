@@ -69,7 +69,7 @@
 						$(".more_box").css("left","0");
 						timer=setTimeout(function(){
 							$('.shade').css('display',"block");
-							$('.shade').css('opacity',"0.3");
+							$('.shade').css('opacity',"0.5");
 							//alert("列表")
 						},250);
 						$('.shade').tap(function(){					
